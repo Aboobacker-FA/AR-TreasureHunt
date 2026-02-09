@@ -16,7 +16,7 @@ if (localStorage.getItem('qid') === null || localStorage.getItem('qid') === unde
 
 async function fetchUserDetails() {
   try {
-    const res = await axios.get(`https://ar-backend-tan.vercel.app/api/v1/user/${localStorage.getItem('uid')}`)
+    const res = await axios.get(`https://ar-treasure-hunt-ten.vercel.app/api/v1/user/${localStorage.getItem('uid')}`)
     console.log(res)
     localStorage.setItem('userDetails', JSON.stringify(res.data.result))
   } catch (error) {

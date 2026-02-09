@@ -91,7 +91,7 @@ function handleLocationError(error) {
 }
 
 // Fetch location data from the API
-fetch('https://ar-backend-tan.vercel.app/api/v1/location')
+fetch('https://ar-treasure-hunt-ten.vercel.app/api/v1/location')
   .then(response => response.json())
   .then(locationData => {
     locations = locationData.locations; // Assuming the API response contains locations data

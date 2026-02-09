@@ -103,7 +103,7 @@
 
         function fetchClue() {
             document.getElementById('heading').innerText = 'Clue'
-            axios.get('https://ar-backend-tan.vercel.app/api/v1/clue')
+            axios.get('https://ar-treasure-hunt-ten.vercel.app/api/v1/clue')
                 .then(res => {
                     console.log(res)
                     if (res.data.success === 1) {

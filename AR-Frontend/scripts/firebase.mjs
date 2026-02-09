@@ -45,7 +45,7 @@ function loginFirebase(e) {
 
         window.location.replace("/page3/index.html");
         await axios.post(
-          "https://ar-backend-tan.vercel.app/api/v1/login",
+          "https://ar-treasure-hunt-ten.vercel.app/api/v1/login",
           { name: user.email },
           { headers }
         );
