@@ -64,7 +64,7 @@ centerBtn.addEventListener('click', () => {
 })
 
 async function checkAllUsers() {
-    const res = await axios.get('https://ar-treasure-hunt-ten.vercel.app/api/v1/user')
+    const res = await axios.get('https://ar-backend-seven.vercel.app/api/v1/user')
     const allUsers = res.data.result
     let shouldMakeSecondCall = true
     allUsers.map(user => {
@@ -75,7 +75,7 @@ async function checkAllUsers() {
         }
     })
     if (shouldMakeSecondCall == true) {
-        const res2 = await axios.post('https://ar-treasure-hunt-ten.vercel.app/api/v1/winner', {}, {
+        const res2 = await axios.post('https://ar-backend-seven.vercel.app/api/v1/winner', {}, {
             headers: {
                 Authorization: localStorage.getItem('uid')
             }
