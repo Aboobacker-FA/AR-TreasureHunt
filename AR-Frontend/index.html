@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>GeoQuest-login</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./output.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@600&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;800&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js" integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="scripts/firebase.mjs"></script>
+        <script src="scripts/init.js"></script>
+</head>
+<body>
+<div class="full-body">
+    <div
+    class="rounded-[1.125rem] bg-[#111] text-center text-[0.94rem] text-[#fff] font-SFProText min-h-screen flex flex-col justify-center">
+        <div
+        class="font-headline-20pxbutton bg-white bg-opacity-5 rounded-xl max-w-4xl p-5 my-10 mx-7">
+            <img class="max-w-full h-auto mx-auto mt-28" src="assets/logo-no-background 1.png" alt="image">
+            <p class="text-2xl leading-7 text-center mt-6">LOGIN TO PLAY</p>
+            <div class="p-5 md:p-10">
+                <form id="loginform">
+                    <div>
+                        <label
+                        class="text-white font-inter block py-2.5 font-medium text-base md:text-lg leading-7 md:leading-8 text-left"
+                        for="email">Email:</label>
+                        <input
+                        id="email"
+                        class="w-full py-2.5 pl-2.5 box-border font-inter bg-glass01 border border-border02 rounded-xl"
+                        type="emai" id="email" name="email" placeholder="Enter email" required>
+                    </div>
+                    
+                    <div>
+                        <label class="text-white font-inter block py-2.5 font-medium text-base md:text-lg leading-7 md:leading-8 text-left"
+                        for="password">Password:</label>
+                        <input id="password" class="w-full py-2.5 pl-2.5 box-border font-inter bg-glass01 border border-border02 rounded-xl"
+                        type="password" id="unique-id" name="unique-id" placeholder="Enter unique id" required>
+                    </div>
+                    
+                    
+                    <button class="mt-6 rounded-xl py-2 pl-2 w-full bg-[#E65728] box-border overflow-hidden flex-shrink-0 text-center text-[1.25rem] font-headline-20pxbutton " type="submit">Login</button>
+                </form>
+                <script type="module">
+                    if(localStorage.getItem('uid') != null){
+                        window.location.replace('/home/index.html')
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

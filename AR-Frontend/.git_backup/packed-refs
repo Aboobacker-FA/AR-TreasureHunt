@@ -1,0 +1,10 @@
+# pack-refs with: peeled fully-peeled sorted 
+80348129770874e59b2d1c21be585c82dd7b2308 refs/remotes/origin/Page-1
+37c5fc872b9ee02e0c20c52b3c580180cbf8cdac refs/remotes/origin/abhinav
+9947c82fcd323d63e6d42eedc8da6ddef10caee6 refs/remotes/origin/main
+4dd3346d561d6a73be6259eb4d731ca8dd86f954 refs/remotes/origin/react
+031fa56aa3dc34219813ea9a1dec1eee95d7fa70 refs/remotes/origin/signup-mrudul
+e58303b4e0d231aeb21220a5b4d5269ad5f37c04 refs/remotes/origin/sree-page-2
+658f1b2856b6b25370139655df905bdbb007ab1e refs/remotes/origin/sreedeep-map
+19897b15e5ea7246db2ffd5a4bba9f4d0b9d8dc0 refs/remotes/origin/test1
+ffb222282bb900a03177b6aa65a1e1fd7563ba37 refs/remotes/origin/test2
