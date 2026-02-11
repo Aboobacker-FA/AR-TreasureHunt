@@ -82,6 +82,9 @@
         const result = await response.json();
         console.log(result);
 
+        localStorage.setItem("uid", result.localId);
+        localStorage.setItem("accessToken", result.idToken);
+
         const res = await axios.post(
           "https://ar-backend-seven.vercel.app/api/v1/user",
           {

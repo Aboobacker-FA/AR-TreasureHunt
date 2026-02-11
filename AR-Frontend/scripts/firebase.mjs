@@ -34,6 +34,12 @@ function loginFirebase(e) {
       user.getIdTokenResult().then(async (tokenResult) => {
         const { token } = tokenResult;
         accessToken = token;
+        // Clear stale data from previous sessions
+        localStorage.removeItem("locIndex");
+        localStorage.removeItem("qid");
+        localStorage.removeItem("story");
+        localStorage.removeItem("userDetails");
+        
         localStorage.setItem("accessToken", accessToken);
         localStorage.setItem("uid", user.uid);
 

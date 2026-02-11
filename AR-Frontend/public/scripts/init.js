@@ -19,6 +19,12 @@ async function fetchUserDetails() {
     const res = await axios.get(`https://ar-backend-seven.vercel.app/api/v1/user/${localStorage.getItem('uid')}`)
     console.log(res)
     localStorage.setItem('userDetails', JSON.stringify(res.data.result))
+    
+    // Sync level from backend if available
+    if (res.data.result && res.data.result.level !== undefined) {
+      localStorage.setItem('locIndex', res.data.result.level)
+      locIndex = res.data.result.level
+    }
   } catch (error) {
     console.log(error)
   }
