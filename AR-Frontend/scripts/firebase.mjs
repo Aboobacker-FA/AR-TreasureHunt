@@ -1,18 +1,17 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
 import {
   getAuth,
   signInWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/12.9.0/firebase-auth.js";
 // import axios from "https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBxBYM2_aWWrjVfcBsfVjFxo8D7RAQ2e08",
-  authDomain: "ar-backend-3b206.firebaseapp.com",
-  projectId: "ar-backend-3b206",
-  storageBucket: "ar-backend-3b206.appspot.com",
-  messagingSenderId: "670134185411",
-  appId: "1:670134185411:web:57c2a85e57ccd0dc8a6176",
-  measurementId: "G-1Q76YSXVLF",
+  apiKey: "AIzaSyD2hsq_Ikc4sSrrU6i_KyEJt0Rs-UeZfIA",
+  authDomain: "ar-tressure.firebaseapp.com",
+  projectId: "ar-tressure",
+  storageBucket: "ar-tressure.firebasestorage.app",
+  messagingSenderId: "1020170900446",
+  appId: "1:1020170900446:web:a25542d340fd7f4c54c34f"
 };
 
 const app = initializeApp(firebaseConfig);
