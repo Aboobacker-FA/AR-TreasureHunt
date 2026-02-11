@@ -43,6 +43,8 @@ AFRAME.registerComponent('mycomponent', {
   }
 
   const mybutton2 = document.getElementById("mapBtn");
-  mybutton2.addEventListener("click", () => {
-    updateModel();
-  });
+  if (mybutton2) {
+      mybutton2.addEventListener("click", () => {
+        updateModel();
+      });
+  }

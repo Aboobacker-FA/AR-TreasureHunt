@@ -125,7 +125,12 @@ captureBtn.addEventListener('click', async () => {
     }
 })
 
-openInput.addEventListener('click', () => {
-    inputBox.classList.add('block')
-    inputBox.classList.remove('hidden')
-})
+if (openInput) {
+    openInput.addEventListener('click', () => {
+        const inputBox = document.getElementById('inputBox'); // Ensure inputBox is also defined or fetched here if needed globally
+        if (inputBox) {
+            inputBox.classList.add('block')
+            inputBox.classList.remove('hidden')
+        }
+    })
+}
